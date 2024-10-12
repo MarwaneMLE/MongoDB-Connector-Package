@@ -6,13 +6,13 @@ with open('README.md', 'r', encoding='utf-8') as f:
    
 
 __version__ = "0.0.4"
-REPO_NAME = "mongodbconnectorpkg"
-PKG_NAME= "databaseautomation"
-AUTHOR_USER_NAME = "sunnysavita10"
-AUTHOR_EMAIL = "sunny.savita@ineuron.ai"
+REPO_NAME = "MongoDB-Connector-Package"
+PACKAGE_NAME= "mangodb-connector"
+AUTHOR_USER_NAME = "MarwaneMLE"
+AUTHOR_EMAIL = "marwanekhadrouf91@gmail.com"
 
 setup(
-    name=PKG_NAME,
+    name=PACKAGE_NAME,
     version=__version__,
     author=AUTHOR_USER_NAME,
     author_email=AUTHOR_EMAIL,
@@ -25,6 +25,7 @@ setup(
     },
     package_dir={"": "src"},
     packages=find_packages(where="src"),
+    #install_requires=get_requirement("./requirements_dev.txt")
     )
 
 
